@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Rolls-Royce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="luxury-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="logo-img">
+        <span class="brand-name">ROLLS-ROYCE</span>
+      </a>
+      
+      <div class="header-right">
+        <nav class="luxury-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link"><span class="nav-text">Home</span></a></li>
+            <li><a href="history.html" class="nav-link"><span class="nav-text">Heritage</span></a></li>
+            <li><a href="models.html" class="nav-link"><span class="nav-text">Models</span></a></li>
+            <li><a href="gallery.html" class="nav-link"><span class="nav-text">Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link cta-link"><span class="nav-text">Contact</span></a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-header">
+      <h1>Contact Rolls-Royce</h1>
+      <p>Begin your journey to ownership</p>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Enquiry Form</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="name-error"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="model">Model of Interest</label>
+            <select id="model" name="model">
+              <option value="">Select a model</option>
+              <option value="phantom">Phantom</option>
+              <option value="ghost">Ghost</option>
+              <option value="cullinan">Cullinan</option>
+              <option value="spectre">Spectre</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+          
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="newsletter" name="newsletter" checked>
+              Subscribe to newsletter
+            </label>
+          </div>
+          
+          <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <h2>Global Headquarters</h2>
+        <address>
+          <p>The Drive, Westhampnett</p>
+          <p>Chichester, PO18 0SH</p>
+          <p>United Kingdom</p>
+        </address>
+        
+        <h3>Contact Details</h3>
+        <p>Phone: <a href="tel:+441243384000">+44 1243 384000</a></p>
+        <p>Email: <a href="mailto:contact@rolls-roycemotorcars.com">contact@rolls-roycemotorcars.com</a></p>
+        
+        <h3>Find Us</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.789204586234!2d-0.7603229235399183!3d50.85336797166785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48745a4a3f1b7e4d%3A0x5a5e5e5e5e5e5e5e!2sRolls-Royce%20Motor%20Cars!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Thank You!</h2>
+        <p>Your enquiry has been submitted successfully.</p>
+        <p>A Rolls-Royce representative will contact you shortly.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="footer-logo">
+        <p class="footer-tagline">The Pinnacle of Automotive Luxury</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="models.html">Current Models</a></li>
+          <li><a href="history.html">Our Heritage</a></li>
+          <li><a href="gallery.html">Design Gallery</a></li>
+          <li><a href="contact.html">Book a Viewing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>The Drive, Westhampnett</p>
+          <p>Chichester, PO18 0SH</p>
+          <p>United Kingdom</p>
+          <p><a href="tel:+441243384000">+44 1243 384000</a></p>
+        </address>
+      </div>
+      
+      <div class="footer-legal">
+        <p class="copyright">&copy; <span id="current-year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/form-validation.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
