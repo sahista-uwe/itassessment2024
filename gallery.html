@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls-Royce Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="luxury-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="logo-img">
+        <span class="brand-name">ROLLS-ROYCE</span>
+      </a>
+      
+      <div class="header-right">
+        <nav class="luxury-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link"><span class="nav-text">Home</span></a></li>
+            <li><a href="history.html" class="nav-link"><span class="nav-text">Heritage</span></a></li>
+            <li><a href="models.html" class="nav-link"><span class="nav-text">Models</span></a></li>
+            <li><a href="gallery.html" class="nav-link"><span class="nav-text">Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link cta-link"><span class="nav-text">Contact</span></a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-header">
+      <h1>Rolls-Royce Gallery</h1>
+      <p>Visual perfection in every detail</p>
+    </section>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-lightbox="phantom">
+        <img src="images/gallery/phantom-thumb.jpg" alt="Phantom Front View">
+        <div class="overlay">Phantom</div>
+      </div>
+      
+      <div class="gallery-item" data-lightbox="ghost">
+        <img src="images/gallery/ghost-thumb.jpg" alt="Ghost Interior">
+        <div class="overlay">Ghost</div>
+      </div>
+      
+      <div class="gallery-item" data-lightbox="cullinan">
+        <img src="images/gallery/cullinan-thumb.jpg" alt="Cullinan SUV">
+        <div class="overlay">Cullinan</div>
+      </div>
+      
+      <div class="gallery-item" data-lightbox="interior">
+        <img src="images/gallery/interior-thumb.jpg" alt="Luxury Interior">
+        <div class="overlay">Interior</div>
+      </div>
+      
+      <div class="gallery-item" data-lightbox="custom">
+        <img src="images/gallery/custom-thumb.jpg" alt="Bespoke Customization">
+        <div class="overlay">Bespoke</div>
+      </div>
+      
+      <div class="gallery-item" data-lightbox="classic">
+        <img src="images/gallery/classic-thumb.jpg" alt="Vintage Rolls-Royce">
+        <div class="overlay">Classic</div>
+      </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div id="caption"></div>
+    </div>
+  </main>
+
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="footer-logo">
+        <p class="footer-tagline">The Pinnacle of Automotive Luxury</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="models.html">Current Models</a></li>
+          <li><a href="history.html">Our Heritage</a></li>
+          <li><a href="gallery.html">Design Gallery</a></li>
+          <li><a href="contact.html">Book a Viewing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>The Drive, Westhampnett</p>
+          <p>Chichester, PO18 0SH</p>
+          <p>United Kingdom</p>
+          <p><a href="tel:+441243384000">+44 1243 384000</a></p>
+        </address>
+      </div>
+      
+      <div class="footer-legal">
+        <p class="copyright">&copy; <span id="current-year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
