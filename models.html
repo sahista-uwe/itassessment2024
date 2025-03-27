@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls-Royce Model Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="luxury-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="logo-img">
+        <span class="brand-name">ROLLS-ROYCE</span>
+      </a>
+      
+      <div class="header-right">
+        <nav class="luxury-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link"><span class="nav-text">Home</span></a></li>
+            <li><a href="history.html" class="nav-link"><span class="nav-text">Heritage</span></a></li>
+            <li><a href="models.html" class="nav-link"><span class="nav-text">Models</span></a></li>
+            <li><a href="gallery.html" class="nav-link"><span class="nav-text">Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link cta-link"><span class="nav-text">Contact</span></a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="models-intro">
+      <h1>Rolls-Royce Model Portfolio</h1>
+      <p>Discover our current collection of motor cars</p>
+    </section>
+
+    <section class="current-models">
+      <h2>Current Models</h2>
+      
+      <div class="model-cards">
+        <div class="model-card" id="phantom">
+          <img src="images/cars/phantom-side.jpg" alt="Phantom">
+          <div class="model-info">
+            <h3>Phantom</h3>
+            <p>The pinnacle of luxury</p>
+            <a href="gallery.html#phantom" class="btn">View Gallery</a>
+          </div>
+        </div>
+        
+        <div class="model-card" id="ghost">
+          <img src="images/cars/ghost-side.jpg" alt="Ghost">
+          <div class="model-info">
+            <h3>Ghost</h3>
+            <p>Effortless, timeless, perfect</p>
+            <a href="gallery.html#ghost" class="btn">View Gallery</a>
+          </div>
+        </div>
+        
+        <div class="model-card" id="cullinan">
+          <img src="images/cars/cullinan-side.jpg" alt="Cullinan">
+          <div class="model-info">
+            <h3>Cullinan</h3>
+            <p>The SUV of extraordinary ability</p>
+            <a href="gallery.html#cullinan" class="btn">View Gallery</a>
+          </div>
+        </div>
+      </div>
+
+      <h3>Technical Specifications Comparison</h3>
+      
+      <table class="specs-table">
+        <tr>
+          <th rowspan="2">Model</th>
+          <th colspan="3">Performance</th>
+          <th rowspan="2">Price From</th>
+        </tr>
+        <tr>
+          <th>Engine</th>
+          <th>0-60 mph</th>
+          <th>Top Speed</th>
+        </tr>
+        <tr>
+          <td>Phantom</td>
+          <td>6.75L V12</td>
+          <td>5.1s</td>
+          <td>155 mph</td>
+          <td>$460,000</td>
+        </tr>
+        <tr>
+          <td>Ghost</td>
+          <td>6.75L V12</td>
+          <td>4.6s</td>
+          <td>155 mph</td>
+          <td>$332,500</td>
+        </tr>
+        <tr>
+          <td>Cullinan</td>
+          <td>6.75L V12</td>
+          <td>4.9s</td>
+          <td>155 mph</td>
+          <td>$351,250</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="classic-models">
+      <h2>Classic Models</h2>
+      
+      <table class="nested-table">
+        <tr>
+          <th>Era</th>
+          <th>Models</th>
+        </tr>
+        <tr>
+          <td>1900s-1940s</td>
+          <td>
+            <table>
+              <tr>
+                <td>Silver Ghost (1906-1926)</td>
+                <td>40/50 HP</td>
+              </tr>
+              <tr>
+                <td>Phantom I (1925-1929)</td>
+                <td>First Phantom</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>1950s-1990s</td>
+          <td>
+            <table>
+              <tr>
+                <td>Silver Cloud (1955-1966)</td>
+                <td>Series I-III</td>
+              </tr>
+              <tr>
+                <td>Corniche (1971-1995)</td>
+                <td>Convertible version</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="footer-logo">
+        <p class="footer-tagline">The Pinnacle of Automotive Luxury</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="models.html">Current Models</a></li>
+          <li><a href="history.html">Our Heritage</a></li>
+          <li><a href="gallery.html">Design Gallery</a></li>
+          <li><a href="contact.html">Book a Viewing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>The Drive, Westhampnett</p>
+          <p>Chichester, PO18 0SH</p>
+          <p>United Kingdom</p>
+          <p><a href="tel:+441243384000">+44 1243 384000</a></p>
+        </address>
+      </div>
+      
+      <div class="footer-legal">
+        <p class="copyright">&copy; <span id="current-year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+</body>
+</html>
