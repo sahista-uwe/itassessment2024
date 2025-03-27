@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Rolls-Royce Motor Cars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce Logo">
+        </div>
+        <nav class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/cars/phantom.jpg" alt="Rolls-Royce Phantom">
+                    <div class="slide-content">
+                        <h1>The Rolls-Royce Phantom</h1>
+                        <p>The pinnacle of luxury motoring</p>
+                        <a href="models.html#phantom" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/cars/ghost.jpg" alt="Rolls-Royce Ghost">
+                    <div class="slide-content">
+                        <h1>The Rolls-Royce Ghost</h1>
+                        <p>Effortless, timeless, perfect</p>
+                        <a href="models.html#ghost" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <section class="featured-models">
+            <h2>Our Luxury Collection</h2>
+            <div class="model-grid">
+                <div class="model-card">
+                    <img src="images/cars/cullinan.jpg" alt="Rolls-Royce Cullinan">
+                    <h3>Cullinan</h3>
+                    <p>The SUV of extraordinary ability</p>
+                    <a href="models.html#cullinan" class="btn-secondary">Discover</a>
+                </div>
+                <div class="model-card">
+                    <img src="images/cars/dawn.jpg" alt="Rolls-Royce Dawn">
+                    <h3>Dawn</h3>
+                    <p>The world's quietest convertible</p>
+                    <a href="models.html#dawn" class="btn-secondary">Discover</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Rolls-Royce Motor Cars</h3>
+                <p>The Drive, Westhampnett, Chichester, PO18 0SH, UK</p>
+                <p><a href="mailto:contact@rolls-roycemotorcars.com">contact@rolls-roycemotorcars.com</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
