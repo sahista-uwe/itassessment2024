@@ -1,99 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - Rolls-Royce Motor Cars</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls-Royce Motor Cars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce Logo">
-        </div>
-        <nav class="primary-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="models.html">Models</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <header class="luxury-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="logo-img">
+        <span class="brand-name">ROLLS-ROYCE</span>
+      </a>
+      
+      <div class="header-right">
+        <nav class="luxury-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link"><span class="nav-text">Home</span></a></li>
+            <li><a href="history.html" class="nav-link"><span class="nav-text">Heritage</span></a></li>
+            <li><a href="models.html" class="nav-link"><span class="nav-text">Models</span></a></li>
+            <li><a href="gallery.html" class="nav-link"><span class="nav-text">Gallery</span></a></li>
+            <li><a href="contact.html" class="nav-link cta-link"><span class="nav-text">Contact</span></a></li>
+          </ul>
         </nav>
-    </header>
+        
+        <button class="mobile-menu-toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="hero-slider">
-            <div class="slider-container">
-                <div class="slide active">
-                    <img src="images/cars/phantom.jpg" alt="Rolls-Royce Phantom">
-                    <div class="slide-content">
-                        <h1>The Rolls-Royce Phantom</h1>
-                        <p>The pinnacle of luxury motoring</p>
-                        <a href="models.html#phantom" class="btn">Explore</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="images/cars/ghost.jpg" alt="Rolls-Royce Ghost">
-                    <div class="slide-content">
-                        <h1>The Rolls-Royce Ghost</h1>
-                        <p>Effortless, timeless, perfect</p>
-                        <a href="models.html#ghost" class="btn">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
-            </div>
-        </section>
-
-        <section class="featured-models">
-            <h2>Our Luxury Collection</h2>
-            <div class="model-grid">
-                <div class="model-card">
-                    <img src="images/cars/cullinan.jpg" alt="Rolls-Royce Cullinan">
-                    <h3>Cullinan</h3>
-                    <p>The SUV of extraordinary ability</p>
-                    <a href="models.html#cullinan" class="btn-secondary">Discover</a>
-                </div>
-                <div class="model-card">
-                    <img src="images/cars/dawn.jpg" alt="Rolls-Royce Dawn">
-                    <h3>Dawn</h3>
-                    <p>The world's quietest convertible</p>
-                    <a href="models.html#dawn" class="btn-secondary">Discover</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-nav">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="models.html">Models</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Rolls-Royce Motor Cars</h3>
-                <p>The Drive, Westhampnett, Chichester, PO18 0SH, UK</p>
-                <p><a href="mailto:contact@rolls-roycemotorcars.com">contact@rolls-roycemotorcars.com</a></p>
-            </div>
+  <main>
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="slide active">
+          <img src="images/cars/phantom.jpg" alt="Rolls-Royce Phantom">
+          <div class="slide-content">
+            <h1>The Rolls-Royce Phantom</h1>
+            <p>The pinnacle of luxury motoring</p>
+            <a href="models.html#phantom" class="btn">Explore</a>
+          </div>
         </div>
-        <div class="copyright">
-            <p>&copy; <span id="year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        <div class="slide">
+          <img src="images/cars/ghost.jpg" alt="Rolls-Royce Ghost">
+          <div class="slide-content">
+            <h1>The Rolls-Royce Ghost</h1>
+            <p>Effortless, timeless, perfect</p>
+            <a href="models.html#ghost" class="btn">Explore</a>
+          </div>
         </div>
-    </footer>
+        <div class="slide">
+          <img src="images/cars/spectre.jpg" alt="Rolls-Royce Spectre">
+          <div class="slide-content">
+            <h1>The Rolls-Royce Spectre</h1>
+            <p>The future of luxury electric</p>
+            <a href="models.html#spectre" class="btn">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
 
-    <script src="js/slider.js"></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <section class="featured-models">
+      <h2>Our Luxury Collection</h2>
+      <div class="model-grid">
+        <div class="model-card">
+          <img src="images/cars/cullinan.jpg" alt="Rolls-Royce Cullinan">
+          <div class="model-info">
+            <h3>Cullinan</h3>
+            <p>The SUV of extraordinary ability</p>
+            <a href="models.html#cullinan" class="btn-secondary">Discover</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <img src="images/cars/dawn.jpg" alt="Rolls-Royce Dawn">
+          <div class="model-info">
+            <h3>Dawn</h3>
+            <p>The world's quietest convertible</p>
+            <a href="models.html#dawn" class="btn-secondary">Discover</a>
+          </div>
+        </div>
+        <div class="model-card">
+          <img src="images/cars/wraith.jpg" alt="Rolls-Royce Wraith">
+          <div class="model-info">
+            <h3>Wraith</h3>
+            <p>The most powerful Rolls-Royce</p>
+            <a href="models.html#wraith" class="btn-secondary">Discover</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logos/rolls-royce.svg" alt="Rolls-Royce" class="footer-logo">
+        <p class="footer-tagline">The Pinnacle of Automotive Luxury</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="models.html">Current Models</a></li>
+          <li><a href="history.html">Our Heritage</a></li>
+          <li><a href="gallery.html">Design Gallery</a></li>
+          <li><a href="contact.html">Book a Viewing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p>The Drive, Westhampnett</p>
+          <p>Chichester, PO18 0SH</p>
+          <p>United Kingdom</p>
+          <p><a href="tel:+441243384000">+44 1243 384000</a></p>
+        </address>
+      </div>
+      
+      <div class="footer-legal">
+        <p class="copyright">&copy; <span id="current-year"></span> Rolls-Royce Motor Cars. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/navigation.js"></script>
 </body>
 </html>
